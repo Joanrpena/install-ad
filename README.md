@@ -26,7 +26,7 @@
 
  <p align="center"><b>IMPORTANT!!</b></p>
  
-- Before continuing, we must set the IP address on the domain controller VM to static. If left as dynamic the two VM's will not be able to communicate with eachother later on, and our client VM will not be able to connect to the domain we create in later steps. To set the domain controller VM ip to static from the Virtual Machines page on the Azure portal click on your domain controller VM > On the left hand side under the Networking tab click Network settings > Click on the link directly under "Network Interface" which should be your virtual NIC(Network Interface Card) > Now that you're on the NIC page open the settings lab on the left hand-side > Click on IP Configurations > Make sure you tick the static IP setting > Save your settings.   
+- Before continuing, we must set the IP address on the domain controller VM to static. If left as dynamic the two VM's will not be able to communicate with eachother later on, and our client VM will not be able to connect to the domain we create in later steps which will be necessary for the next lab. From the Virtual Machines page on the Azure portal click on your domain controller VM > On the left hand side under the Networking tab click Network settings > Click on the link directly under "Network Interface" which should be your virtual NIC(Network Interface Card) > Now that you're on the NIC page open the settings lab on the left hand-side > Click on IP Configurations > Make sure you tick the static IP setting > Save your settings.   
 <br />
 
 <p align="center">
