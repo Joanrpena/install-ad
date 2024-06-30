@@ -41,5 +41,25 @@
 <img src="https://github.com/Joanrpena/install-ad/assets/131486928/eed09f03-b457-47f7-a532-2b539424a0e7" height="60%" width="60%" alt="Installation Steps"/>
 </p>
 
-- We can now begin installing Active Directory on our DC VM. On the Server Manager Dashboard screen, click on Add roles and features and click Next. You should now be on the Installation Type screen, click Role-based or feature-based installation > On Server Selection confirm the private IP adress of your DC VM then click Next > we should now be on the Server Roles section, click on Active Directory Domain Services a pop up should appear, click Add Features then click Next until you reach Confirmation then press Install. 
+- We can now begin installing Active Directory on our DC VM. On the Server Manager Dashboard screen, click on Add roles and features and click Next. You should now be on the Installation Type screen, click Role-based or feature-based installation > On Server Selection confirm the private IP adress of your DC VM then click Next > we should now be on the Server Roles section, click on Active Directory Domain Services a pop up should appear, click Add Features then click Next until you reach Confirmation then press Install. Active Directory is now installed but we're not finished yet. 
 <br />
+
+<p align="center">
+<img src="https://github.com/Joanrpena/install-ad/assets/131486928/3db0e1f2-e15c-44a6-b657-8d8646230852" height="60%" width="60%" alt="Installation Steps"/>
+<img src="https://github.com/Joanrpena/install-ad/assets/131486928/2d6fb418-9b2b-41d8-a18d-e2aed5ab4314" height="60%" width="60%" alt="Installation Steps"/>
+</p>
+
+-  Now that we have installed Active Directory on our DC VM, on your Server Manager you will see a flag notification on the top right. This is because we have to promote this server to a Domain Controller. Click on "Promote this server to a Domain Controller" > Tick "Add a new forest" > Now specify a name for your domain. In this case I will use joandctest.com and click next > Specify a password for your domain > Click next until you reach the Prerequisites check, then click Install. When install is complete your computer will restart. 
+
+<h3> Important!!! </h3>
+<p align="center">
+  <img src="https://github.com/Joanrpena/install-ad/assets/131486928/ba006a0c-689c-4012-a62c-026362662ee3" height="30%" width="30%" alt="Installation Steps"/>
+</p>
+When it is time to RDP back into your domain controller VM you will not be able to use the standard user account. You will have to log in with the credentials of the domain. Use the domain path, and then the name of the user. Example: joandctest.com\labuser.
+<br />
+
+<h2>Conclusion</h2>
+<p>
+In this lab, we successfully installed and configured Active Directory on a virtual machine in Azure, setting it up as a domain controller. We ensured communication between the domain controller VM and a client VM by configuring static IP addresses and enabling necessary network protocols. The domain was established and the server was promoted to a domain controller. This setup forms the foundation for the confirugation of Active Directory in Azure in upcoming labs.
+</p>
+
