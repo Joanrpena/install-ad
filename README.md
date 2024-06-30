@@ -60,6 +60,6 @@ When it is time to RDP back into your domain controller VM you will not be able 
 
 <h2>Conclusion</h2>
 <p>
-In this lab, we successfully installed and configured Active Directory on a virtual machine in Azure, setting it up as a domain controller. We ensured communication between the domain controller VM and a client VM by configuring static IP addresses and enabling necessary network protocols. The domain was established and the server was promoted to a domain controller. This setup forms the foundation for the confirugation of Active Directory in Azure in upcoming labs.
+In this lab, we successfully installed and configured Active Directory on a virtual machine in Azure, setting it up as a domain controller. We ensured communication between the domain controller VM and a client VM by configuring static IP addresses and enabling necessary network protocols. The domain was established and the server was promoted to a domain controller. This setup forms the foundation for the configuration of Active Directory in Azure in upcoming labs.
 </p>
 
